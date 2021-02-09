@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ProviderGlobal } from './Context/global';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ProviderGlobal>
+      <App />
+    </ProviderGlobal>
   </React.StrictMode>,
   document.getElementById('root')
 );

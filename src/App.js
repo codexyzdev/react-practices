@@ -1,7 +1,7 @@
-import Content from './components/Content';
-import Total from './components/Total';
-import { Header } from './components/Header';
-import TextArea from './components/TextArea';
+import Content from './Components/Content';
+import Total from './Components/Total';
+import { Header } from './Components/Header';
+import TextArea from './Components/TextArea';
 
 function App() {
   const course = 'Half Stack application development';

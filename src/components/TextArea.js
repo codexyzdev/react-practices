@@ -1,4 +1,4 @@
-import useLocalStorage from '../hook/useLocalStorage';
+import useLocalStorage from '../Hooks/useLocalStorage';
 
 export default function TextArea() {
   const [text, setText] = useLocalStorage('text', '');
