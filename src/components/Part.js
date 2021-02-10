@@ -1,6 +1,7 @@
+import '../Components/styles/part.css';
 export default function Part({ part, exercise }) {
   return (
-    <p>
+    <p className="p">
       {part} {exercise}
     </p>
   );

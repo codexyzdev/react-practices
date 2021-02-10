@@ -13,13 +13,13 @@ function App() {
   ];
   const exercises = [10, 7, 14];
   return (
-    <div>
+    <>
       <Header course={course} />
       <Content parts={parts} exercises={exercises} />
       <Total exercises={exercises} />
       <TextArea />
       <ComplexState />
-    </div>
+    </>
   );
 }
 
