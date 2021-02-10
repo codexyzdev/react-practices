@@ -2,6 +2,7 @@ import Content from './Components/Content';
 import Total from './Components/Total';
 import { Header } from './Components/Header';
 import TextArea from './Components/TextArea';
+import ComplexState from './Components/ComplexState';
 
 function App() {
   const course = 'Half Stack application development';
@@ -17,6 +18,7 @@ function App() {
       <Content parts={parts} exercises={exercises} />
       <Total exercises={exercises} />
       <TextArea />
+      <ComplexState />
     </div>
   );
 }
