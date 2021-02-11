@@ -1,17 +1,19 @@
-import Content from './Components/Content';
-import Total from './Components/Total';
-import { Header } from './Components/Header';
-import TextArea from './Components/TextArea';
-import ComplexState from './Components/ComplexState';
+import Content from './Components/Content'
+import Total from './Components/Total'
+import { Header } from './Components/Header'
+import TextArea from './Components/TextArea'
+import ComplexState from './Components/ComplexState'
+import HandlingArrays from './Components/HandlingArrays'
+import Example from './Components/Example'
 
 function App() {
-  const course = 'Half Stack application development';
+  const course = 'Half Stack application development'
   const parts = [
     'Fundamentals of React',
     'Using props to pass data',
     'State of a component',
-  ];
-  const exercises = [10, 7, 14];
+  ]
+  const exercises = [10, 7, 14]
   return (
     <>
       <Header course={course} />
@@ -19,8 +21,10 @@ function App() {
       <Total exercises={exercises} />
       <TextArea />
       <ComplexState />
+      <HandlingArrays />
+      <Example />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

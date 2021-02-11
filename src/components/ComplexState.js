@@ -8,24 +8,24 @@ export default function ComplexState() {
   const [countClicks, setCountClicks] = useLocalStorage('countCliks', 0);
 
   const handleLeftClick = () => {
-    const newClick = {
+    setClicks({
       ...clicks,
       left: clicks.left + 1,
-    };
-    setClicks(newClick);
+    });
     setCountClicks(countClicks + 1);
   };
   const handleRigthClick = () => {
-    const newClick = {
+    setClicks({
       ...clicks,
       rigth: clicks.rigth + 1,
-    };
-    setClicks(newClick);
+    });
     setCountClicks(countClicks + 1);
   };
   return (
     <section>
-      <h2>{countClicks}</h2>
+      <h2>
+        <kbd>{countClicks}</kbd>
+      </h2>
       <button onClick={handleLeftClick}>Left {clicks.left}</button>
       <button onClick={handleRigthClick}>Rigth {clicks.rigth}</button>
     </section>
